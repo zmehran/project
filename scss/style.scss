@@ -1,0 +1,353 @@
+@import "bootstrap";
+@import "bootstrap-icons";
+@import "variables";
+@import "mixin";
+@import "animation.min";
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url('fonts/font/YekanBakh-thin.woff') format('woff'),
+  url('fonts/font/YekanBakh-thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/font/YekanBakh-Light.woff') format('woff'),
+  url('fonts/font/YekanBakh-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/font/YekanBakh-Regular.woff') format('woff'),
+  url('fonts/font/YekanBakh-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/font/YekanBakh-SemiBold.woff') format('woff'),
+  url('fonts/font/YekanBakh-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/font/YekanBakh-Bold.woff') format('woff'),
+  url('fonts/font/YekanBakh-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/font/YekanBakh-ExtraBold.woff') format('woff'),
+  url('fonts/font/YekanBakh-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/font/YekanBakh-Black.woff') format('woff'),
+  url('fonts/font/YekanBakh-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url('fonts/font/YekanBakh-ExtraBlack.woff') format('woff'),
+  url('fonts/font/YekanBakh-ExtraBlack.woff2') format('woff2');
+}
+/*@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url(/fonts/font/YekanBakh-Bold.otf?7626d015e15844db7d1f54c8e415461a);
+  src: url(/fonts/font/YekanBakh-Bold.otf?7626d015e15844db7d1f54c8e415461a?#iefix) format('embedded-opentype'),
+  url(/fonts/font/YekanBakh-Bold.woff2?6ec03a37e370c0d7f4f6bbdba0feac23) format('woff2'),
+  url(/fonts/font/YekanBakh-Bold.woff?a762a767a3459fec2195da1373ebf0b1) format('woff'),
+  url(/fonts/font/YekanBakh-Bold.ttf?4ff441e3b8c51acd2261585feca1d8c8) format('truetype');
+}*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Yekan Bakh !important;
+  position: relative;
+}
+
+.display-none-btn{
+  display: none;
+}
+.display-block-btn{
+  display: block;
+}
+
+/*login page*/
+
+.errorInput
+{
+  border: 1px solid #D30000 !important;
+  background-color: #FFF0ED !important;
+  color: #D30000 !important
+}
+.colorIcon{
+  color: #D30000 !important
+}
+
+/*.colorPlace
+{
+  &::placeholder{
+    color: #D30000
+  }
+
+}*/
+/*end class jquery*/
+
+
+.login {
+
+  height: 620px;
+  background: linear-gradient(105.71deg, #FFFFFF -2.6%, #FFFFFF 4.86%, #ECFAFE 4.86%, #ECFAFE 12.31%, #D8F6FC 12.31%, #D8F6FC 19.77%, #C5F1FB 19.77%, #C5F1FB 27.22%, #B1ECF9 27.22%, #B1ECF9 34.68%, #9EE8F8 34.68%, #9EE8F8 42.13%, #8BE3F6 42.13%, #8BE3F6 49.59%, #77DEF5 49.59%, #77DEF5 57.04%, #64D9F3 57.04%, #64D9F3 64.5%, #51D5F2 64.5%, #51D5F2 71.95%, #3DD0F0 71.95%, #3DD0F0 79.41%, #2ACBEF 79.41%, #2ACBEF 86.86%, #16C7ED 86.86%, #16C7ED 94.32%, #03C2EC 94.32%, #03C2EC 101.77%);
+  filter: blur(18px);
+  -webkit-filter: blur(18px);
+  -moz-filter: blur(18px);
+  -o-filter: blur(18);
+  -ms-filter: blur(18px);
+
+
+}
+.container-login {
+  position: absolute !important;
+  top: 11%;
+  left: 9%;
+
+  .card-login {
+    border-radius: 41px;
+    padding: 20px 60px;
+
+    .row-input-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .col-num-1 {
+        margin-bottom: 30px !important;
+        .title-logo{
+          margin-bottom: 40px;
+        }
+      }
+
+      .col-num-2, .col-num-3 {
+        margin-bottom: 12px;
+
+        .groupInput {
+          .user-pass-input {
+            z-index: 0;
+            transition: all 0.7s ease-in-out !important;
+
+            &:focus {
+              //border-color: blue !important;
+              border: 1px solid blue;
+              box-shadow: none;
+
+              + .bi {
+                color: blue ;
+              }
+
+
+            }
+
+            &:hover {
+              cursor: pointer;
+
+            }
+           /* &:invalid {
+              border: 1px solid red !important;
+            }*/
+          }
+
+          i {
+            z-index: 1;
+
+          }
+
+
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+  h3 {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+
+  .pictureLogo {
+    display: block;
+    //margin-bottom: 23px;
+    margin: 13px auto;
+  }
+
+  .groupInput {
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      color: #AEB9CF;
+    }
+
+    .user-pass-input {
+      border-radius: 10px !important;
+      background-color: #F4F7FC;
+      border-color: #D8E8FF;
+    }
+  }
+
+
+  .box-right {
+    z-index: 1;
+    //padding-left: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 90px;
+
+
+  }
+
+  .box-left {
+    position: absolute;
+    left: 10px;
+    overflow: hidden;
+    z-index: 0;
+    height: 492px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .watch-login {
+      height: 100%;
+      border-top-left-radius: 41px;
+      border-bottom-left-radius: 41px;
+    }
+  }
+
+  .col-num-4 {
+    margin-bottom: 14px;
+    float: right;
+
+    #forget {
+      float: left;
+      text-decoration: none;
+      font-size: 14px;
+      color: #0D6EFD;
+      margin-bottom: 25px;
+      /* &:before{
+         content: "";
+         clear: both;
+         display: block;
+       }*/
+    }
+
+    #remember-form-check {
+      float: right;
+      color: #212529;
+      font-size: 14px;
+    }
+
+    #remember {
+      float: right;
+      margin: 5px;
+    }
+  }
+
+  .col-num-5 {
+    margin-top: 38px;
+    .btn-green {
+
+        @include btn-login() ;
+      }
+
+    .btn-green-inactive{
+
+      //color: #CACACA;
+      @include btn-login();
+      background: $btn-login-inactive;
+      border-color: $btn-border-login-inactive;
+
+    }
+
+  }
+
+}
+/*end login page*/
+
+/*new password page*/
+.message-newpassword{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*sendSMS page*/
+.message-sendSMS{
+  /*font-size: 14px;
+  margin: 50px 0;
+  line-height: 2;
+  display: block;*/
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 0;
+}
+.col-num-5-sendSMS{
+  margin:20px 0 ;
+  //margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn-green-sendSMS{
+
+    //width: 300px;
+    @include btn-login();
+    width: auto;
+    padding: 6px 26px;
+    transition: all .5s ease-in-out;
+  }
+  .bttn-test{
+
+    transform: scale(0.5) translate(-100%, -100%);
+
+  }
+  .btn-cancle{
+    padding: 5px 50px;
+    border-radius: 10px;
+  }
+}
+
+.col-num-1-1{
+
+  margin: 55px 0 50px;
+}
+.picturecheck{
+  height: 100px;
+  margin: 56px auto 20px;
+  display: block;
+}

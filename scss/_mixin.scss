@@ -1,0 +1,14 @@
+@mixin btn-login(){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 86px;
+  gap: 10px;
+  width: 100%;
+  background: $btn-login-active;
+  border-radius: 10px;
+  border-color: $btn-border-login-active;
+  font-size: 16px;
+
+}

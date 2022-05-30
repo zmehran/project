@@ -1,0 +1,43 @@
+extends ../parsials/layout
+
+block main
+    section
+        .login
+        .container.container-login
+            .row
+                .col-md-6.box-right
+                    .card.card-login
+                        .card-body
+                            .row.row-input-login
+                                form#frm
+                                    .col-md-12.col-num-1(style="margin-bottom:40px")
+                                        img.img-fluid.pictureLogo(src="../images/logo.png")
+                                        h3.title-logo سیستم کنترل حضور و غیاب / حقوق و دستمزد
+                                    .col-md-12.col-num-2
+                                        label.form-label(for='username') نام کاربری
+                                        .input-group.groupInput
+                                            input#username.form-control.user-pass-input(type='text' name='username' required="required")
+                                            i.bi.bi-person
+
+
+                                    .col-md-12.col-num-3
+                                        label.form-label(for='password') رمز عبور
+                                        .input-group.groupInput
+                                            input#password.form-control.user-pass-input(type='password')
+                                            i.bi.bi-key
+                                    .col-md-12.col-num-4
+                                        a#forget(href="") رمزمو فراموش کردم
+                                        .form-check#remember-form-check
+
+                                            label.form-check-label(for='remember')
+                                                | منو یادت بمونه
+                                            input#remember.form-check-input(type='checkbox' value='')
+
+                                    .col-md-12.col-num-5
+                                        button.btn.btn-primary.btn-green
+                                            | ورود به پنل
+                                #f2.display-none-btn
+                                    include formError
+
+                .col-md-6.box-left
+                    img.img-fluid.watch-login(src="../images/watchLogin.png")
