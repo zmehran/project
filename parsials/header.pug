@@ -1,0 +1,58 @@
+header
+
+    section#headerDshd
+        .container
+            .row
+                .col-12.row-main
+                    .row
+                        .col-2.col-header-1
+                            img.img-fluid.pictureLogo(src="./images/logo.png")
+                        .col-4.col-header-2.iconChange
+                            //i.bi.bi-calendar3.bi-header
+                            img.img-icon(src="./images/svgIcon/Calendar.svg")
+                            img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Calendar.svg")
+                            span.day-header شنبه 17 اردیبهشت 1401
+                            //i.bi.bi-watch.bi-header
+                            img.img-icon(src="./images/svgIcon/Time Circle.svg")
+                            span.time-header 11:48:25
+                        .col-3.col-header-3
+
+                            a.iconChange(href="#")
+                                //i.bi.bi-question-circle.bi-header
+                                img.img-icon(src="./images/svgIcon/Danger Circle.svg")
+                                img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Info Circle.svg")
+                            a.iconChange(href="#")
+                                img.img-icon(src="./images/svgIcon/Setting.svg")
+                                img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Setting.svg")
+                                //i.bi.bi-gear.bi-header
+                            a.circle-icon.iconChange(href="#")
+                                img.img-icon(src="./images/svgIcon/Message.svg")
+                                img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Message.svg")
+                                //i.bi.bi-envelope.bi-header
+                            a.circle-icon.iconChange(href="#")
+                                img.img-icon(src="./images/svgIcon/Folder.svg")
+                                img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Folder.svg")
+                                //i.bi.bi-folder.bi-header
+                        .col-3.col-header-4
+                            .dropdown
+                                button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle.areaUser(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                    //| محمد حسین حیدری
+                                    img.img-fluid.imgAvatar(src="./images/img_avatar.png")
+                                    span.nameUser محمد حسین حیدری
+                                    span.jobUser حسابدار شرکت
+
+                                ul.dropdown-menu.dropdown-areaUser(aria-labelledby='dropdownMenuButton1')
+                                    li
+                                        a.dropdown-item.titleUserName(href='#')
+                                            span تنظیمات پسورد
+                                            i.bi.bi-key-fill.iconUsername
+                                    li
+                                        a.dropdown-item.titleUserName(href='#')
+                                            span پشتیبانی
+                                            i.bi.bi-shield-fill-check
+                                    li
+                                        a.dropdown-item.titleUserName(href='#')
+                                            span خروج
+                                            i.bi.bi-box-arrow-down-right
+
+                                img.img-icon.arrow-bottom-icon(src="./images/svgIcon/Stroke 1.svg")

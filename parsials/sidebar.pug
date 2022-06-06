@@ -1,0 +1,156 @@
+.col-3.p-0
+    .d-flex.flex-column.flex-shrink-0.p-3.bg-white(style='width: 280px;')
+        a.d-flex.align-items-center.mb-3.mb-md-0.link-dark.text-decoration-none(href='/')
+            //svg.bi.pe-none.me-2(width='40' height='32')
+                use(xlink:href='#bootstrap')
+            span.title-main منوی اصلی
+        //hr
+
+        ul.nav.nav-pills.flex-column.mb-auto.sidebar-menu
+            li.nav-item
+                a.nav-link.active.title-menu(href='#' aria-current='page')
+                    |           داشبورد
+                    i.bi.bi-grid-fill.icon-menu
+                    //img(src="./images/svgIcon/Folder.svg")
+            li
+                a.nav-link.link-dark.title-menu.iconChange(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                    | پرسنل
+                    img.img-icon(src="./images/svgIcon/3 User.svg")
+                    img.img-icon.display-none(src="./images/svgIcon/BlackIcon/3 User.svg")
+                    //svg(viewBox='0 0 32 32')
+                        use(xlink:href='./images/svgicon/Activity.svg')
+                    //i.icons.icon1
+                    //svg.sidebar#Outline(xmlns='./images/svgicon/Activity.svg' width="18" viewBox='0 0 24 24')
+                        path(d='M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z')
+                    //svg.sidebar#Outline(xmlns='./images/svgicon/Stroke 2.svg' width="18" viewBox='0 0 24 24')
+                        path(d='M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z')
+
+                    //img(src="./images/svgicon/Activity.svg")
+                    //i.bi.bi-person.icon-menu
+
+                #collapseExample.collapse.collapse-submenu
+                    .card.card-body
+                       ul
+                           li
+                            a(href="#") تعریف پرسنل
+                           li
+                               a(href="#") شیفت پرسنل
+
+                //a.nav-link.link-dark(href='#')
+                    svg.bi.pe-none.me-2(width='16' height='16')
+                        use(xlink:href='#speedometer2')
+                    |           Dashboard
+            li
+                a.nav-link.link-dark.title-menu.iconChange(data-bs-toggle='collapse' href='#collapseExample1' role='button' aria-expanded='false' aria-controls='collapseExample')
+                    | عملیات
+                    img.img-icon(src="./images/svgIcon/Activity.svg")
+                    img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Activity.svg")
+                #collapseExample1.collapse.collapse-submenu
+                    .card.card-body
+                        ul
+                            li
+                                a(href="#") تعریف پرسنل1
+                            li
+                                a(href="#") شیفت پرسنل1
+            li
+                a.nav-link.link-dark.title-menu.iconChange(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                    | گزارشات
+                    img.img-icon(src="./images/svgIcon/Chart.svg")
+                    img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Chart.svg")
+            li
+                a.nav-link.link-dark.title-menu.iconChange(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                    | ارتباط با دستگاه
+                    img.img-icon(src="./images/svgIcon/Swap.svg")
+                    img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Swap.svg")
+        hr
+
+        span.title-main دسترسی سریع
+        ul.nav.nav-pills.flex-column.mb-auto.radios
+            li.nav-item
+                .form-check.check-radio.row
+                    .col-2
+                        input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                    .col-10.pe-0
+                        label.form-check-label(for='flexRadioDefault1')
+                            | تعریف پرسنل جدید
+
+
+            li.nav-item
+                .form-check.check-radio.row
+                    .col-2
+                        input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault')
+                    .col-10.pe-0
+                        label.form-check-label(for='flexRadioDefault2')
+                            | گزارشات ورود و خروج
+
+
+            li.nav-item
+                .form-check.check-radio.row
+                    .col-2
+                        input#flexRadioDefault3.form-check-input(type='radio' name='flexRadioDefault')
+                    .col-10.pe-0
+                        label.form-check-label(for='flexRadioDefault3')
+                            | مرخصی و ماموریت
+
+            li.nav-item
+                .form-check.check-radio.row
+                    .col-2
+                        input#flexRadioDefault4.form-check-input(type='radio' name='flexRadioDefault')
+                    .col-10.pe-0
+                        label.form-check-label(for='flexRadioDefault4')
+                            | حقوق و دستمزد
+
+            li.nav-item
+                .form-check.check-radio.row
+                    .col-2
+                        input#flexRadioDefault5.form-check-input(type='radio' name='flexRadioDefault')
+                    .col-10.pe-0
+                        label.form-check-label(for='flexRadioDefault5')
+                            | حقوق و دستمزد
+            //li.nav-item
+                a.nav-link.active.title-menu(href='#' aria-current='page')
+                    |           داشبورد
+                    i.bi.bi-grid-fill.icon-menu
+
+
+        hr
+        .dropdown.online
+            button#onlineDropDown.btn.btn-secondary.dropdown-toggle.areaUser(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+
+                span.nameOnline وضعیت ارتباط آنلاین
+
+            ul.dropdown-menu.onlineMenu(aria-labelledby='onlineDropDown')
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span دستگاه 1
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span دستگاه 2
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span دستگاه 3
+
+        hr
+        .dropdownCarpet
+            button#carpetDropDown.btn.btn-secondary.dropdown-toggle.areaUser.carpet.iconChange(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+
+
+                img.img-icon(src="./images/svgIcon/Image.svg")
+                img.img-icon.display-none(src="./images/svgIcon/BlackIcon/Work.svg")
+                span.nameCarpet فرش داریوش
+
+            a(href="")
+                img.img-icon.arrow-bottom-icon(src="./images/svgIcon/Stroke 1.svg")
+            a(href="")
+                img.img-icon.arrow-top-icon(src="./images/svgIcon/Arrow - Up 4.svg")
+
+            ul.dropdown-menu.carpetMenu(aria-labelledby='carpetDropDown')
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span فرش احتشام
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span فرش زرین کویر
+                li
+                    a.dropdown-item.titleUserName(href='#')
+                        span آتی شهر هوشمند
