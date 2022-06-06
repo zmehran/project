@@ -1,11 +1,12 @@
-extends ../parsials/layout
+extends ../parsials/layoutLogin
 
 block main
-    section
+    section#login-page
         .login
         .container.container-login
-            .row
-                .col-md-6.box-right
+            .row(style="height:100%;display: flex;justify-content: center;")
+                //.col-lg-6.col-md-5.box-right
+                .col-xl-5.col-lg-6.col-10.box-right
                     .card.card-login
                         .card-body
                             .row.row-input-login
@@ -26,18 +27,28 @@ block main
                                             input#password.form-control.user-pass-input(type='password')
                                             i.bi.bi-key
                                     .col-md-12.col-num-4
-                                        a#forget(href="") رمزمو فراموش کردم
+                                        a#forget(href="forgetpassword.html") رمزمو فراموش کردم
                                         .form-check#remember-form-check
 
                                             label.form-check-label(for='remember')
-                                                | منو یادت بمونه
+                                            | منو یادت بمونه
                                             input#remember.form-check-input(type='checkbox' value='')
+                                        //#barba-wrapper
+                                            .barba-container(data-namespace="homepage")
+                                                a#forget(href="forgetpassword.html") رمزمو فراموش کردم
 
                                     .col-md-12.col-num-5
+                                        //#barba-wrapper
+                                             .barba-container(data-namespace="homepage")
+                                                 a#forget(href="forgetpassword.html") رمزمو فراموش کردم
+
                                         button.btn.btn-primary.btn-green
                                             | ورود به پنل
                                 #f2.display-none-btn
                                     include formError
 
-                .col-md-6.box-left
+                .col-xl-5.col-lg-6.col-md-6.d-lg-block.d-none.box-left
                     img.img-fluid.watch-login(src="../images/watchLogin.png")
+
+
+
